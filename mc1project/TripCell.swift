@@ -10,7 +10,8 @@ import UIKit
 class TripCell: UICollectionViewCell {
     @IBOutlet weak var tripImage: UIImageView! {
         didSet {
-
+        tripImage.layer.cornerRadius = 10
+            tripImage.layer.masksToBounds = true
         }
     }
     @IBOutlet weak var tripName: UILabel!
