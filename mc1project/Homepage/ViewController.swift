@@ -9,19 +9,21 @@ import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    
+    //HOMEPAGE
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var exploreCollectionView: UICollectionView!
-
+    
+    
+    //HOMEPAGE
     // datasourcePopular
     var tripImageArray = ["bali", "bali2"]
     var tripArray = ["Bali", "Wakatobi"]
     var tripDescArray = ["Pulau Seribu Pura", "Pulau Komodo"]
     
     // datasourceExplore
-    var exploreImageArray = ["bali2", "bali3"]
-    var exploreCityArray = ["Bandung", "Semarang"]
+    var exploreImageArray = ["bali2", "bali3", "bali2", "bali3", "bali2", "bali3"]
+    var exploreCityArray = ["Bandung", "Semarang", "Semarang", "Semarang", "Semarang", "Semarang"]
     
     
     override func viewDidLoad() {
@@ -30,7 +32,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collectionView.reloadData()
     }
     
-    //collectionview
+    //HOMEPAGE
+    //collectionviewHOMPAGE
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return collectionView == exploreCollectionView ? exploreCityArray.count : tripArray.count
