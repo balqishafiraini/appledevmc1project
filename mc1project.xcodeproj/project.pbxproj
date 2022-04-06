@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA311DC427FDE32A002CA5A7 /* CategorizeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */; };
 		FACD88EB27FBF57D001D84EB /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD88EA27FBF57D001D84EB /* TripCell.swift */; };
 		FACD88ED27FC02F1001D84EB /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD88EC27FC02F1001D84EB /* ExploreCell.swift */; };
 		FAF16E0127F53C5E00D3842F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E0027F53C5E00D3842F /* AppDelegate.swift */; };
@@ -19,6 +20,11 @@
 		FAF16E1B27F53C6000D3842F /* mc1projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E1A27F53C6000D3842F /* mc1projectTests.swift */; };
 		FAF16E2527F53C6000D3842F /* mc1projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E2427F53C6000D3842F /* mc1projectUITests.swift */; };
 		FAF16E2727F53C6000D3842F /* mc1projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E2627F53C6000D3842F /* mc1projectUITestsLaunchTests.swift */; };
+		FAF7CE7827FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7CE7727FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift */; };
+		FAF7CE7D27FC8081004920B1 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7CE7C27FC8081004920B1 /* ListCell.swift */; };
+		FAF7CE8127FC889D004920B1 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF7CE8027FC889D004920B1 /* CardViewController.xib */; };
+		FAF7CE8327FC8B56004920B1 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7CE8227FC8B56004920B1 /* CardViewController.swift */; };
+		FAF7CE8527FD0785004920B1 /* DetailsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7CE8427FD0785004920B1 /* DetailsInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizeCityViewController.swift; sourceTree = "<group>"; };
 		FACD88EA27FBF57D001D84EB /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
 		FACD88EC27FC02F1001D84EB /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		FAF16DFD27F53C5E00D3842F /* mc1project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mc1project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +62,11 @@
 		FAF16E2027F53C6000D3842F /* mc1projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mc1projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF16E2427F53C6000D3842F /* mc1projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mc1projectUITests.swift; sourceTree = "<group>"; };
 		FAF16E2627F53C6000D3842F /* mc1projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mc1projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FAF7CE7727FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInfoSwipeViewController.swift; sourceTree = "<group>"; };
+		FAF7CE7C27FC8081004920B1 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		FAF7CE8027FC889D004920B1 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		FAF7CE8227FC8B56004920B1 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		FAF7CE8427FD0785004920B1 /* DetailsInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA311DC527FDE32E002CA5A7 /* CategorizeCity */ = {
+			isa = PBXGroup;
+			children = (
+				FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */,
+			);
+			path = CategorizeCity;
+			sourceTree = "<group>";
+		};
 		FAF16DF427F53C5E00D3842F = {
 			isa = PBXGroup;
 			children = (
@@ -107,12 +127,13 @@
 			children = (
 				FAF16E0027F53C5E00D3842F /* AppDelegate.swift */,
 				FAF16E0227F53C5E00D3842F /* SceneDelegate.swift */,
-				FAF16E0427F53C5E00D3842F /* ViewController.swift */,
-				FACD88EA27FBF57D001D84EB /* TripCell.swift */,
-				FACD88EC27FC02F1001D84EB /* ExploreCell.swift */,
+				FAF7CE8627FD0792004920B1 /* DetailsInfo */,
+				FAF7CE7927FC7FDA004920B1 /* Homepage */,
+				FAF7CE7A27FC800A004920B1 /* DetailIsInfoSwipe */,
 				FAF16E0627F53C5E00D3842F /* Main.storyboard */,
-				FAF16E0C27F53C6000D3842F /* Assets.xcassets */,
+				FA311DC527FDE32E002CA5A7 /* CategorizeCity */,
 				FAF16E0E27F53C6000D3842F /* LaunchScreen.storyboard */,
+				FAF16E0C27F53C6000D3842F /* Assets.xcassets */,
 				FAF16E1127F53C6000D3842F /* Info.plist */,
 				FAF16E0927F53C5E00D3842F /* mc1project.xcdatamodeld */,
 			);
@@ -134,6 +155,36 @@
 				FAF16E2627F53C6000D3842F /* mc1projectUITestsLaunchTests.swift */,
 			);
 			path = mc1projectUITests;
+			sourceTree = "<group>";
+		};
+		FAF7CE7927FC7FDA004920B1 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				FAF16E0427F53C5E00D3842F /* ViewController.swift */,
+				FACD88EA27FBF57D001D84EB /* TripCell.swift */,
+				FACD88EC27FC02F1001D84EB /* ExploreCell.swift */,
+			);
+			path = Homepage;
+			sourceTree = "<group>";
+		};
+		FAF7CE7A27FC800A004920B1 /* DetailIsInfoSwipe */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7CE7C27FC8081004920B1 /* ListCell.swift */,
+				FAF7CE8027FC889D004920B1 /* CardViewController.xib */,
+				FAF7CE8427FD0785004920B1 /* DetailsInfoViewController.swift */,
+				FAF7CE8227FC8B56004920B1 /* CardViewController.swift */,
+			);
+			path = DetailIsInfoSwipe;
+			sourceTree = "<group>";
+		};
+		FAF7CE8627FD0792004920B1 /* DetailsInfo */ = {
+			isa = PBXGroup;
+			children = (
+				FAF7CE7727FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift */,
+			);
+			name = DetailsInfo;
+			path = ../DetailsInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF7CE8127FC889D004920B1 /* CardViewController.xib in Resources */,
 				FAF16E1027F53C6000D3842F /* LaunchScreen.storyboard in Resources */,
 				FAF16E0D27F53C6000D3842F /* Assets.xcassets in Resources */,
 				FAF16E0827F53C5E00D3842F /* Main.storyboard in Resources */,
@@ -270,7 +322,12 @@
 				FAF16E0527F53C5E00D3842F /* ViewController.swift in Sources */,
 				FAF16E0127F53C5E00D3842F /* AppDelegate.swift in Sources */,
 				FAF16E0327F53C5E00D3842F /* SceneDelegate.swift in Sources */,
+				FAF7CE8527FD0785004920B1 /* DetailsInfoViewController.swift in Sources */,
 				FAF16E0B27F53C5E00D3842F /* mc1project.xcdatamodeld in Sources */,
+				FAF7CE7827FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift in Sources */,
+				FAF7CE8327FC8B56004920B1 /* CardViewController.swift in Sources */,
+				FA311DC427FDE32A002CA5A7 /* CategorizeCityViewController.swift in Sources */,
+				FAF7CE7D27FC8081004920B1 /* ListCell.swift in Sources */,
 				FACD88EB27FBF57D001D84EB /* TripCell.swift in Sources */,
 				FACD88ED27FC02F1001D84EB /* ExploreCell.swift in Sources */,
 			);
