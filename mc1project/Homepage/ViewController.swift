@@ -63,6 +63,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return }
         headerView.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
         headerView.textLabel?.textColor = UIColor(red: 0.00, green: 0.42, blue: 0.34, alpha: 1.00)
+        headerView.textLabel?.frame = CGRect(x: 20, y: 8, width: 320, height: 20)
     }
     
     
@@ -80,9 +81,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
         } else {
             let cell = (tableView.dequeueReusableCell(withIdentifier: "exploreCellID", for: indexPath) as? ExploreCell)!
+            cell.exploreImage.image = UIImage(named: exploreImageArray[indexPath.row])
+            cell.exploreCity.text = exploreCityArray[indexPath.row]
             
             return cell
         }
     }
-    
 }

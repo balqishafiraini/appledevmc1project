@@ -19,6 +19,16 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fzr-ti-Vg4">
                         <rect key="frame" x="0.0" y="0.0" width="357" height="135"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofe-3f-xsE">
+                        <rect key="frame" x="85" y="56" width="186" height="23"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="NO"/>
+                        </accessibility>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Fzr-ti-Vg4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BUu-it-WT2"/>
@@ -29,6 +39,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="exploreCity" destination="Ofe-3f-xsE" id="qvT-YA-44F"/>
                 <outlet property="exploreImage" destination="Fzr-ti-Vg4" id="zoW-cg-Iom"/>
             </connections>
             <point key="canvasLocation" x="131.15942028985509" y="117.1875"/>

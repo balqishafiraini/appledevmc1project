@@ -10,7 +10,6 @@ import UIKit
 class ExploreCell: UITableViewCell {
     
     @IBOutlet weak var exploreCity: UILabel!
-
     
     @IBOutlet weak var exploreImage: UIImageView! {
         
@@ -20,6 +19,9 @@ class ExploreCell: UITableViewCell {
 
         }
     }
+    
+    var exploreImageArray = ["bali2", "bali3", "bali2", "bali3", "bali2", "bali3"]
+    var exploreCityArray = ["Bandung", "Semarang", "Semarang", "Semarang", "Semarang", "Semarang"]
     
     override func awakeFromNib() {
         super.awakeFromNib()
