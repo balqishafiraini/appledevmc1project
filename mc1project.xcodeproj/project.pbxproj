@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FA311DC427FDE32A002CA5A7 /* CategorizeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */; };
-		FACD88EB27FBF57D001D84EB /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD88EA27FBF57D001D84EB /* TripCell.swift */; };
-		FACD88ED27FC02F1001D84EB /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD88EC27FC02F1001D84EB /* ExploreCell.swift */; };
+		FAB78C5F27FEA3DB009D3696 /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB78C5D27FEA3DB009D3696 /* TripCell.swift */; };
+		FAB78C6027FEA3DB009D3696 /* TripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB78C5E27FEA3DB009D3696 /* TripCell.xib */; };
+		FAB78C6327FEA4B3009D3696 /* TripItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB78C6127FEA4B3009D3696 /* TripItemCell.swift */; };
+		FAB78C6427FEA4B3009D3696 /* TripItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB78C6227FEA4B3009D3696 /* TripItemCell.xib */; };
+		FAB78C6727FEA6AA009D3696 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB78C6527FEA6AA009D3696 /* ExploreCell.swift */; };
+		FAB78C6827FEA6AA009D3696 /* ExploreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB78C6627FEA6AA009D3696 /* ExploreCell.xib */; };
 		FAF16E0127F53C5E00D3842F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E0027F53C5E00D3842F /* AppDelegate.swift */; };
 		FAF16E0327F53C5E00D3842F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E0227F53C5E00D3842F /* SceneDelegate.swift */; };
 		FAF16E0527F53C5E00D3842F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E0427F53C5E00D3842F /* ViewController.swift */; };
@@ -46,8 +50,12 @@
 
 /* Begin PBXFileReference section */
 		FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizeCityViewController.swift; sourceTree = "<group>"; };
-		FACD88EA27FBF57D001D84EB /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
-		FACD88EC27FC02F1001D84EB /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		FAB78C5D27FEA3DB009D3696 /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
+		FAB78C5E27FEA3DB009D3696 /* TripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripCell.xib; sourceTree = "<group>"; };
+		FAB78C6127FEA4B3009D3696 /* TripItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripItemCell.swift; sourceTree = "<group>"; };
+		FAB78C6227FEA4B3009D3696 /* TripItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripItemCell.xib; sourceTree = "<group>"; };
+		FAB78C6527FEA6AA009D3696 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		FAB78C6627FEA6AA009D3696 /* ExploreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreCell.xib; sourceTree = "<group>"; };
 		FAF16DFD27F53C5E00D3842F /* mc1project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mc1project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF16E0027F53C5E00D3842F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF16E0227F53C5E00D3842F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +108,19 @@
 				FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */,
 			);
 			path = CategorizeCity;
+			sourceTree = "<group>";
+		};
+		FAB78C5C27FEA3BD009D3696 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAB78C5D27FEA3DB009D3696 /* TripCell.swift */,
+				FAB78C5E27FEA3DB009D3696 /* TripCell.xib */,
+				FAB78C6127FEA4B3009D3696 /* TripItemCell.swift */,
+				FAB78C6227FEA4B3009D3696 /* TripItemCell.xib */,
+				FAB78C6527FEA6AA009D3696 /* ExploreCell.swift */,
+				FAB78C6627FEA6AA009D3696 /* ExploreCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FAF16DF427F53C5E00D3842F = {
@@ -161,8 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				FAF16E0427F53C5E00D3842F /* ViewController.swift */,
-				FACD88EA27FBF57D001D84EB /* TripCell.swift */,
-				FACD88EC27FC02F1001D84EB /* ExploreCell.swift */,
+				FAB78C5C27FEA3BD009D3696 /* Cell */,
 			);
 			path = Homepage;
 			sourceTree = "<group>";
@@ -291,8 +311,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB78C6027FEA3DB009D3696 /* TripCell.xib in Resources */,
 				FAF7CE8127FC889D004920B1 /* CardViewController.xib in Resources */,
 				FAF16E1027F53C6000D3842F /* LaunchScreen.storyboard in Resources */,
+				FAB78C6427FEA4B3009D3696 /* TripItemCell.xib in Resources */,
+				FAB78C6827FEA6AA009D3696 /* ExploreCell.xib in Resources */,
 				FAF16E0D27F53C6000D3842F /* Assets.xcassets in Resources */,
 				FAF16E0827F53C5E00D3842F /* Main.storyboard in Resources */,
 			);
@@ -322,14 +345,15 @@
 				FAF16E0527F53C5E00D3842F /* ViewController.swift in Sources */,
 				FAF16E0127F53C5E00D3842F /* AppDelegate.swift in Sources */,
 				FAF16E0327F53C5E00D3842F /* SceneDelegate.swift in Sources */,
+				FAB78C6727FEA6AA009D3696 /* ExploreCell.swift in Sources */,
+				FAB78C6327FEA4B3009D3696 /* TripItemCell.swift in Sources */,
 				FAF7CE8527FD0785004920B1 /* DetailsInfoViewController.swift in Sources */,
+				FAB78C5F27FEA3DB009D3696 /* TripCell.swift in Sources */,
 				FAF16E0B27F53C5E00D3842F /* mc1project.xcdatamodeld in Sources */,
 				FAF7CE7827FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift in Sources */,
 				FAF7CE8327FC8B56004920B1 /* CardViewController.swift in Sources */,
 				FA311DC427FDE32A002CA5A7 /* CategorizeCityViewController.swift in Sources */,
 				FAF7CE7D27FC8081004920B1 /* ListCell.swift in Sources */,
-				FACD88EB27FBF57D001D84EB /* TripCell.swift in Sources */,
-				FACD88ED27FC02F1001D84EB /* ExploreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

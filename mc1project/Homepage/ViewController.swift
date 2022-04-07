@@ -7,59 +7,82 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     
     //HOMEPAGE
-    @IBOutlet weak var collectionView: UICollectionView!
-    
-    @IBOutlet weak var exploreCollectionView: UICollectionView!
-    
+    @IBOutlet weak var tableView: UITableView!
     
     //HOMEPAGE
     // datasourcePopular
-    var tripImageArray = ["bali", "bali2"]
-    var tripArray = ["Bali", "Wakatobi"]
-    var tripDescArray = ["Pulau Seribu Pura", "Pulau Komodo"]
     
     // datasourceExplore
     var exploreImageArray = ["bali2", "bali3", "bali2", "bali3", "bali2", "bali3"]
     var exploreCityArray = ["Bandung", "Semarang", "Semarang", "Semarang", "Semarang", "Semarang"]
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        exploreCollectionView.reloadData()
-        collectionView.reloadData()
+        registerCell()
+        
+    }
+    
+    func registerCell() {
+        tableView.register(UINib(nibName: "TripCell", bundle: nil), forCellReuseIdentifier: "tripCellID")
+        tableView.register(UINib(nibName: "ExploreCell", bundle: nil), forCellReuseIdentifier: "exploreCellID")
     }
     
     //HOMEPAGE
     //collectionviewHOMPAGE
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return collectionView == exploreCollectionView ? exploreCityArray.count : tripArray.count
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
-    
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == exploreCollectionView {
-            let cellExplore = (collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCellID", for: indexPath) as? ExploreCell)!
-            cellExplore.exploreImage.image = UIImage(named: exploreImageArray[indexPath.row])
-            cellExplore.exploreCity.text = exploreCityArray[indexPath.row]
-            return cellExplore
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return 1
         } else {
-            let cellTrip = (collectionView.dequeueReusableCell(withReuseIdentifier: "tripCellID", for: indexPath) as? TripCell)!
-            cellTrip.tripImage.image = UIImage(named: tripImageArray[indexPath.row])
-            cellTrip.tripName.text = tripArray[indexPath.row]
-            cellTrip.tripDescription.text = tripDescArray[indexPath.row]
-            return cellTrip
+            return exploreCityArray.count
         }
     }
     
+    //HEADER TITLE
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return section == 0 ? "Popular City" : "Explore More"
+
+    }
+
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? UITableViewHeaderFooterView
+        else {
+            return }
+        headerView.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        headerView.textLabel?.textColor = UIColor(red: 0.00, green: 0.42, blue: 0.34, alpha: 1.00)
     }
     
     
-
+   
+    //EXPLORE CELL
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return indexPath.section == 0 ? 200 : 125
+    }
+    
+    // TRIP CELL
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            let cell = (tableView.dequeueReusableCell(withIdentifier: "tripCellID", for: indexPath) as? TripCell)!
+            
+            return cell
+        } else {
+            let cell = (tableView.dequeueReusableCell(withIdentifier: "exploreCellID", for: indexPath) as? ExploreCell)!
+            
+            return cell
+        }
+    }
+    
 }

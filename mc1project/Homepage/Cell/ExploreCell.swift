@@ -1,15 +1,17 @@
 //
-//  ExploreCell.swift
+//  ExploreItemCell.swift
 //  mc1project
 //
-//  Created by Balqis on 05/04/22.
+//  Created by Balqis on 07/04/22.
 //
 
 import UIKit
 
-class ExploreCell: UICollectionViewCell {
-
+class ExploreCell: UITableViewCell {
+    
     @IBOutlet weak var exploreCity: UILabel!
+
+    
     @IBOutlet weak var exploreImage: UIImageView! {
         
         didSet {
@@ -17,6 +19,11 @@ class ExploreCell: UICollectionViewCell {
             exploreImage.layer.masksToBounds = true
 
         }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
     }
 
 }
