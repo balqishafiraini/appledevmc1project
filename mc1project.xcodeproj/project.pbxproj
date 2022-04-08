@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0FC317280077B100CA0D9F /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC315280077B100CA0D9F /* FoodCell.swift */; };
+		FA0FC318280077B100CA0D9F /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0FC316280077B100CA0D9F /* FoodCell.xib */; };
+		FA0FC31B28007CF400CA0D9F /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC31928007CF400CA0D9F /* FoodItemCell.swift */; };
+		FA0FC31C28007CF400CA0D9F /* FoodItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0FC31A28007CF400CA0D9F /* FoodItemCell.xib */; };
+		FA0FC31F2800835C00CA0D9F /* TourismCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC31D2800835C00CA0D9F /* TourismCell.swift */; };
+		FA0FC3202800835C00CA0D9F /* TourismCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0FC31E2800835C00CA0D9F /* TourismCell.xib */; };
+		FA0FC3232800836A00CA0D9F /* AcommodationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC3212800836A00CA0D9F /* AcommodationCell.swift */; };
+		FA0FC3242800836A00CA0D9F /* AcommodationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0FC3222800836A00CA0D9F /* AcommodationCell.xib */; };
+		FA0FC3272800838400CA0D9F /* TourismItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC3252800838400CA0D9F /* TourismItemCell.swift */; };
+		FA0FC3282800838400CA0D9F /* TourismItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0FC3262800838400CA0D9F /* TourismItemCell.xib */; };
+		FA0FC32B2800839200CA0D9F /* AcommodationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC3292800839200CA0D9F /* AcommodationItemCell.swift */; };
+		FA0FC32C2800839200CA0D9F /* AcommodationItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0FC32A2800839200CA0D9F /* AcommodationItemCell.xib */; };
 		FA311DC427FDE32A002CA5A7 /* CategorizeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */; };
 		FAB78C5F27FEA3DB009D3696 /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB78C5D27FEA3DB009D3696 /* TripCell.swift */; };
 		FAB78C6027FEA3DB009D3696 /* TripCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB78C5E27FEA3DB009D3696 /* TripCell.xib */; };
@@ -49,6 +61,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA0FC315280077B100CA0D9F /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodCell.swift; path = mc1project/CategorizeCity/Food/FoodCell.swift; sourceTree = SOURCE_ROOT; };
+		FA0FC316280077B100CA0D9F /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FoodCell.xib; path = mc1project/CategorizeCity/Food/FoodCell.xib; sourceTree = SOURCE_ROOT; };
+		FA0FC31928007CF400CA0D9F /* FoodItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
+		FA0FC31A28007CF400CA0D9F /* FoodItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemCell.xib; sourceTree = "<group>"; };
+		FA0FC31D2800835C00CA0D9F /* TourismCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismCell.swift; sourceTree = "<group>"; };
+		FA0FC31E2800835C00CA0D9F /* TourismCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourismCell.xib; sourceTree = "<group>"; };
+		FA0FC3212800836A00CA0D9F /* AcommodationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcommodationCell.swift; sourceTree = "<group>"; };
+		FA0FC3222800836A00CA0D9F /* AcommodationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcommodationCell.xib; sourceTree = "<group>"; };
+		FA0FC3252800838400CA0D9F /* TourismItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismItemCell.swift; sourceTree = "<group>"; };
+		FA0FC3262800838400CA0D9F /* TourismItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourismItemCell.xib; sourceTree = "<group>"; };
+		FA0FC3292800839200CA0D9F /* AcommodationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcommodationItemCell.swift; sourceTree = "<group>"; };
+		FA0FC32A2800839200CA0D9F /* AcommodationItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcommodationItemCell.xib; sourceTree = "<group>"; };
 		FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizeCityViewController.swift; sourceTree = "<group>"; };
 		FAB78C5D27FEA3DB009D3696 /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
 		FAB78C5E27FEA3DB009D3696 /* TripCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripCell.xib; sourceTree = "<group>"; };
@@ -102,10 +126,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA0FC32D2800839800CA0D9F /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				FA0FC315280077B100CA0D9F /* FoodCell.swift */,
+				FA0FC316280077B100CA0D9F /* FoodCell.xib */,
+				FA0FC31928007CF400CA0D9F /* FoodItemCell.swift */,
+				FA0FC31A28007CF400CA0D9F /* FoodItemCell.xib */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		FA0FC32E280083A600CA0D9F /* Tourism */ = {
+			isa = PBXGroup;
+			children = (
+				FA0FC31D2800835C00CA0D9F /* TourismCell.swift */,
+				FA0FC31E2800835C00CA0D9F /* TourismCell.xib */,
+				FA0FC3252800838400CA0D9F /* TourismItemCell.swift */,
+				FA0FC3262800838400CA0D9F /* TourismItemCell.xib */,
+			);
+			path = Tourism;
+			sourceTree = "<group>";
+		};
+		FA0FC32F280083AE00CA0D9F /* Acommodation */ = {
+			isa = PBXGroup;
+			children = (
+				FA0FC3212800836A00CA0D9F /* AcommodationCell.swift */,
+				FA0FC3222800836A00CA0D9F /* AcommodationCell.xib */,
+				FA0FC3292800839200CA0D9F /* AcommodationItemCell.swift */,
+				FA0FC32A2800839200CA0D9F /* AcommodationItemCell.xib */,
+			);
+			path = Acommodation;
+			sourceTree = "<group>";
+		};
+		FA0FC330280083E800CA0D9F /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Slider;
+			sourceTree = "<group>";
+		};
 		FA311DC527FDE32E002CA5A7 /* CategorizeCity */ = {
 			isa = PBXGroup;
 			children = (
-				FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */,
+				FA0FC330280083E800CA0D9F /* Slider */,
+				FA0FC32D2800839800CA0D9F /* Food */,
+				FA0FC32E280083A600CA0D9F /* Tourism */,
+				FA0FC32F280083AE00CA0D9F /* Acommodation */,
 			);
 			path = CategorizeCity;
 			sourceTree = "<group>";
@@ -153,6 +220,7 @@
 				FAF7CE7A27FC800A004920B1 /* DetailIsInfoSwipe */,
 				FAF16E0627F53C5E00D3842F /* Main.storyboard */,
 				FA311DC527FDE32E002CA5A7 /* CategorizeCity */,
+				FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */,
 				FAF16E0E27F53C6000D3842F /* LaunchScreen.storyboard */,
 				FAF16E0C27F53C6000D3842F /* Assets.xcassets */,
 				FAF16E1127F53C6000D3842F /* Info.plist */,
@@ -190,9 +258,9 @@
 		FAF7CE7A27FC800A004920B1 /* DetailIsInfoSwipe */ = {
 			isa = PBXGroup;
 			children = (
+				FAF7CE7727FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift */,
 				FAF7CE7C27FC8081004920B1 /* ListCell.swift */,
 				FAF7CE8027FC889D004920B1 /* CardViewController.xib */,
-				FAF7CE8427FD0785004920B1 /* DetailsInfoViewController.swift */,
 				FAF7CE8227FC8B56004920B1 /* CardViewController.swift */,
 			);
 			path = DetailIsInfoSwipe;
@@ -201,7 +269,7 @@
 		FAF7CE8627FD0792004920B1 /* DetailsInfo */ = {
 			isa = PBXGroup;
 			children = (
-				FAF7CE7727FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift */,
+				FAF7CE8427FD0785004920B1 /* DetailsInfoViewController.swift */,
 			);
 			name = DetailsInfo;
 			path = ../DetailsInfo;
@@ -312,12 +380,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB78C6027FEA3DB009D3696 /* TripCell.xib in Resources */,
+				FA0FC3202800835C00CA0D9F /* TourismCell.xib in Resources */,
+				FA0FC3282800838400CA0D9F /* TourismItemCell.xib in Resources */,
 				FAF7CE8127FC889D004920B1 /* CardViewController.xib in Resources */,
 				FAF16E1027F53C6000D3842F /* LaunchScreen.storyboard in Resources */,
 				FAB78C6427FEA4B3009D3696 /* TripItemCell.xib in Resources */,
+				FA0FC32C2800839200CA0D9F /* AcommodationItemCell.xib in Resources */,
 				FAB78C6827FEA6AA009D3696 /* ExploreCell.xib in Resources */,
+				FA0FC318280077B100CA0D9F /* FoodCell.xib in Resources */,
 				FAF16E0D27F53C6000D3842F /* Assets.xcassets in Resources */,
+				FA0FC31C28007CF400CA0D9F /* FoodItemCell.xib in Resources */,
 				FAF16E0827F53C5E00D3842F /* Main.storyboard in Resources */,
+				FA0FC3242800836A00CA0D9F /* AcommodationCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,13 +420,19 @@
 				FAF16E0127F53C5E00D3842F /* AppDelegate.swift in Sources */,
 				FAF16E0327F53C5E00D3842F /* SceneDelegate.swift in Sources */,
 				FAB78C6727FEA6AA009D3696 /* ExploreCell.swift in Sources */,
+				FA0FC317280077B100CA0D9F /* FoodCell.swift in Sources */,
+				FA0FC32B2800839200CA0D9F /* AcommodationItemCell.swift in Sources */,
+				FA0FC31F2800835C00CA0D9F /* TourismCell.swift in Sources */,
 				FAB78C6327FEA4B3009D3696 /* TripItemCell.swift in Sources */,
 				FAF7CE8527FD0785004920B1 /* DetailsInfoViewController.swift in Sources */,
 				FAB78C5F27FEA3DB009D3696 /* TripCell.swift in Sources */,
 				FAF16E0B27F53C5E00D3842F /* mc1project.xcdatamodeld in Sources */,
 				FAF7CE7827FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift in Sources */,
 				FAF7CE8327FC8B56004920B1 /* CardViewController.swift in Sources */,
+				FA0FC3232800836A00CA0D9F /* AcommodationCell.swift in Sources */,
 				FA311DC427FDE32A002CA5A7 /* CategorizeCityViewController.swift in Sources */,
+				FA0FC31B28007CF400CA0D9F /* FoodItemCell.swift in Sources */,
+				FA0FC3272800838400CA0D9F /* TourismItemCell.swift in Sources */,
 				FAF7CE7D27FC8081004920B1 /* ListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -32,10 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.register(UINib(nibName: "TripCell", bundle: nil), forCellReuseIdentifier: "tripCellID")
         tableView.register(UINib(nibName: "ExploreCell", bundle: nil), forCellReuseIdentifier: "exploreCellID")
     }
-    
-    //HOMEPAGE
-    //collectionviewHOMPAGE
-    
+
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -67,8 +64,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
-   
-    //EXPLORE CELL
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return indexPath.section == 0 ? 200 : 125
     }
