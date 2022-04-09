@@ -41,6 +41,15 @@ class CategorizeCityViewController: UIViewController, UITableViewDelegate, UITab
             return ""
         }
     }
+    
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        guard let headerView = view as? UITableViewHeaderFooterView
+        else {
+            return }
+        headerView.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
+        headerView.textLabel?.textColor = UIColor(red: 0.00, green: 0.42, blue: 0.34, alpha: 1.00)
+        headerView.textLabel?.frame = CGRect(x: 20, y: 8, width: 320, height: 20)
+    }
         
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return indexPath.section == 0 ? 200 : 125

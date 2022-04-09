@@ -11,7 +11,7 @@ class FoodItemCell: UICollectionViewCell {
     
     @IBOutlet weak var foodImage: UIImageView! {
         didSet {
-            foodImage.layer.cornerRadius = 20
+            foodImage.layer.cornerRadius = 10
             foodImage.layer.masksToBounds = true
         }
     }

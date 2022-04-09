@@ -11,15 +11,14 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="acommodationCellID" rowHeight="268" id="KGk-i7-Jjw" customClass="AcommodationCell" customModule="mc1project" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="419" height="268"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="419" height="268"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dt7-fb-3hW">
-                        <rect key="frame" x="0.0" y="0.0" width="419" height="268"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dt7-fb-3hW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D5d-iz-cmG">
                             <size key="itemSize" width="128" height="128"/>
@@ -33,12 +32,18 @@
                         </connections>
                     </collectionView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="dt7-fb-3hW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Wnw-lZ-kBg"/>
+                    <constraint firstAttribute="bottom" secondItem="dt7-fb-3hW" secondAttribute="bottom" id="gFi-2c-fLM"/>
+                    <constraint firstAttribute="trailing" secondItem="dt7-fb-3hW" secondAttribute="trailing" id="ivg-yW-uTE"/>
+                    <constraint firstItem="dt7-fb-3hW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wK8-Th-fsf"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="acommodationCollection" destination="dt7-fb-3hW" id="MrX-Du-s9G"/>
             </connections>
-            <point key="canvasLocation" x="203.62318840579712" y="125.22321428571428"/>
+            <point key="canvasLocation" x="213" y="125"/>
         </tableViewCell>
     </objects>
     <resources>
