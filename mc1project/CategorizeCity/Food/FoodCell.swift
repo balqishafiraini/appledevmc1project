@@ -2,21 +2,21 @@
 //  FoodCell.swift
 //  mc1project
 //
-//  Created by Balqis on 08/04/22.
+//  Created by Wildan Budi on 09/04/22.
 //
 
 import UIKit
 
 class FoodCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
-    
-    
+
     @IBOutlet weak var foodCollection: UICollectionView!
     
-    var foodImageArray = ["bali", "bali2", "bali2"]
-    var foodArray = ["Bali", "Wakatobi", "Bali"]
-
+    var foodImageArray = ["bali2", "bali3", "bali2", "bali3", "bali2", "bali3"]
+    var foodLabelArray = ["Bandung", "Semarang", "Semarang", "Semarang", "Semarang", "Semarang"]
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Initialization code
         foodCollection.register(UINib(nibName: "FoodItemCell", bundle: nil), forCellWithReuseIdentifier: "foodItemCellID")
     }
 
@@ -27,13 +27,15 @@ class FoodCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return foodArray.count
+        return foodImageArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cellFood = (collectionView.dequeueReusableCell(withReuseIdentifier: "foodItemCellID", for: indexPath) as? FoodItemCell)!
-        cellFood.foodImage.image = UIImage(named: foodImageArray[indexPath.row])
-        return cellFood
+        let foodCell = (collectionView.dequeueReusableCell(withReuseIdentifier: "foodItemCellID", for: indexPath) as? FoodItemCell)!
+        foodCell.foodImage.image = UIImage(named: foodImageArray[indexPath.row])
+        foodCell.foodLabel.text = foodLabelArray[indexPath.row]
+        
+        return foodCell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

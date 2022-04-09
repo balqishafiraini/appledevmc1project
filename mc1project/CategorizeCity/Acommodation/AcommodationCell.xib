@@ -10,36 +10,35 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="acommodationCellID" id="KGk-i7-Jjw" customClass="AcommodationCell" customModule="mc1project" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="acommodationCellID" rowHeight="268" id="KGk-i7-Jjw" customClass="AcommodationCell" customModule="mc1project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="268"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
+                <rect key="frame" x="0.0" y="0.0" width="419" height="268"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="7VJ-74-Wcu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="dt7-fb-3hW">
+                        <rect key="frame" x="0.0" y="0.0" width="419" height="268"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="k7Z-AE-QMp">
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D5d-iz-cmG">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="Gnd-nd-vSI"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="FxM-N8-ruk"/>
+                        </connections>
                     </collectionView>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="7VJ-74-Wcu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gqq-pi-rXl"/>
-                    <constraint firstAttribute="bottom" secondItem="7VJ-74-Wcu" secondAttribute="bottom" id="hOX-Jr-e88"/>
-                    <constraint firstAttribute="trailing" secondItem="7VJ-74-Wcu" secondAttribute="trailing" id="hQq-Fe-U6A"/>
-                    <constraint firstItem="7VJ-74-Wcu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="x2J-Uj-gOJ"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="acommodationCollection" destination="7VJ-74-Wcu" id="CP2-Cy-Bzf"/>
+                <outlet property="acommodationCollection" destination="dt7-fb-3hW" id="MrX-Du-s9G"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="99.776785714285708"/>
+            <point key="canvasLocation" x="203.62318840579712" y="125.22321428571428"/>
         </tableViewCell>
     </objects>
     <resources>

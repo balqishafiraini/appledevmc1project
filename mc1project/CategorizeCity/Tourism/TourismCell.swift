@@ -10,8 +10,9 @@ import UIKit
 class TourismCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var tourismCollection: UICollectionView!
+    
     var tourismImageArray = ["bali", "bali2", "bali2"]
-    var tourismArray = ["Bali", "Wakatobi", "Bali"]
+    var tourismLabelArray = ["Bali", "Wakatobi", "Bali"]
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,19 +24,21 @@ class TourismCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDa
 
         // Configure the view for the selected state
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tourismArray.count
+        return tourismImageArray.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cellTourism = (collectionView.dequeueReusableCell(withReuseIdentifier: "tourismItemCellID", for: indexPath) as? FoodItemCell)!
-        cellTourism.foodImage.image = UIImage(named: tourismImageArray[indexPath.row])
+        let cellTourism = (collectionView.dequeueReusableCell(withReuseIdentifier: "tourismItemCellID", for: indexPath) as? TourismItemCell)!
+        cellTourism.tourismImage.image = UIImage(named: tourismImageArray[indexPath.row])
+        cellTourism.tourismLabel.text = tourismLabelArray[indexPath.row]
+        
         return cellTourism
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
-    }
+  }
     
 }

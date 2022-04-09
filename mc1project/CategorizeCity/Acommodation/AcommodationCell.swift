@@ -7,17 +7,15 @@
 
 import UIKit
 
-class AcommodationCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+class AcommodationCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var acommodationCollection: UICollectionView!
     
-    var acommodationImageArray = ["bali", "bali2", "bali2"]
-    var acommodationArray = ["Bali", "Wakatobi", "Bali"]
-
+    var acommodationImageArray = ["bali", "bali2", "bali2", "bali", "bali2", "bali2"]
+    var acommodationLabelArray = ["Bali", "Wakatobi", "Bali", "Bali", "Wakatobi", "Bali"]
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
         acommodationCollection.register(UINib(nibName: "AcommodationItemCell", bundle: nil), forCellWithReuseIdentifier: "acommodationItemCellID")
     }
 
@@ -28,16 +26,17 @@ class AcommodationCell: UITableViewCell, UICollectionViewDataSource, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return acommodationArray.count
+        return acommodationImageArray.count
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cellAcommodation = (collectionView.dequeueReusableCell(withReuseIdentifier: "acommodationItemCellID", for: indexPath) as? AcommodationItemCell)!
             cellAcommodation.acommodationImage.image = UIImage(named: acommodationImageArray[indexPath.row])
+            cellAcommodation.acommodationLabel.text = acommodationLabelArray[indexPath.row]
 
             return cellAcommodation
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
     }

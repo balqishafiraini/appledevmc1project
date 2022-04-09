@@ -9,10 +9,11 @@ import UIKit
 
 class AcommodationItemCell: UICollectionViewCell {
 
+    @IBOutlet weak var acommodationLabel: UILabel!
     @IBOutlet weak var acommodationImage: UIImageView! {
         didSet {
-        tourismImage.layer.cornerRadius = 10
-            tourismImage.layer.masksToBounds = true
+        acommodationImage.layer.cornerRadius = 10
+            acommodationImage.layer.masksToBounds = true
         }
     }
     

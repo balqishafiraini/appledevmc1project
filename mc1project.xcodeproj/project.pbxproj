@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA0FC317280077B100CA0D9F /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC315280077B100CA0D9F /* FoodCell.swift */; };
-		FA0FC318280077B100CA0D9F /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0FC316280077B100CA0D9F /* FoodCell.xib */; };
-		FA0FC31B28007CF400CA0D9F /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC31928007CF400CA0D9F /* FoodItemCell.swift */; };
-		FA0FC31C28007CF400CA0D9F /* FoodItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0FC31A28007CF400CA0D9F /* FoodItemCell.xib */; };
+		423C32AD2801DC1E00264C86 /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C32AB2801DC1E00264C86 /* FoodCell.swift */; };
+		423C32AE2801DC1E00264C86 /* FoodCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423C32AC2801DC1E00264C86 /* FoodCell.xib */; };
+		423C32B52801DF2D00264C86 /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423C32B32801DF2D00264C86 /* FoodItemCell.swift */; };
+		423C32B62801DF2D00264C86 /* FoodItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 423C32B42801DF2D00264C86 /* FoodItemCell.xib */; };
 		FA0FC31F2800835C00CA0D9F /* TourismCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC31D2800835C00CA0D9F /* TourismCell.swift */; };
 		FA0FC3202800835C00CA0D9F /* TourismCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0FC31E2800835C00CA0D9F /* TourismCell.xib */; };
 		FA0FC3232800836A00CA0D9F /* AcommodationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC3212800836A00CA0D9F /* AcommodationCell.swift */; };
@@ -61,10 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FA0FC315280077B100CA0D9F /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FoodCell.swift; path = mc1project/CategorizeCity/Food/FoodCell.swift; sourceTree = SOURCE_ROOT; };
-		FA0FC316280077B100CA0D9F /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FoodCell.xib; path = mc1project/CategorizeCity/Food/FoodCell.xib; sourceTree = SOURCE_ROOT; };
-		FA0FC31928007CF400CA0D9F /* FoodItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
-		FA0FC31A28007CF400CA0D9F /* FoodItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemCell.xib; sourceTree = "<group>"; };
+		423C32AB2801DC1E00264C86 /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
+		423C32AC2801DC1E00264C86 /* FoodCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodCell.xib; sourceTree = "<group>"; };
+		423C32B32801DF2D00264C86 /* FoodItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
+		423C32B42801DF2D00264C86 /* FoodItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FoodItemCell.xib; sourceTree = "<group>"; };
 		FA0FC31D2800835C00CA0D9F /* TourismCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismCell.swift; sourceTree = "<group>"; };
 		FA0FC31E2800835C00CA0D9F /* TourismCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourismCell.xib; sourceTree = "<group>"; };
 		FA0FC3212800836A00CA0D9F /* AcommodationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcommodationCell.swift; sourceTree = "<group>"; };
@@ -129,10 +129,10 @@
 		FA0FC32D2800839800CA0D9F /* Food */ = {
 			isa = PBXGroup;
 			children = (
-				FA0FC315280077B100CA0D9F /* FoodCell.swift */,
-				FA0FC316280077B100CA0D9F /* FoodCell.xib */,
-				FA0FC31928007CF400CA0D9F /* FoodItemCell.swift */,
-				FA0FC31A28007CF400CA0D9F /* FoodItemCell.xib */,
+				423C32AB2801DC1E00264C86 /* FoodCell.swift */,
+				423C32AC2801DC1E00264C86 /* FoodCell.xib */,
+				423C32B32801DF2D00264C86 /* FoodItemCell.swift */,
+				423C32B42801DF2D00264C86 /* FoodItemCell.xib */,
 			);
 			path = Food;
 			sourceTree = "<group>";
@@ -387,11 +387,11 @@
 				FAB78C6427FEA4B3009D3696 /* TripItemCell.xib in Resources */,
 				FA0FC32C2800839200CA0D9F /* AcommodationItemCell.xib in Resources */,
 				FAB78C6827FEA6AA009D3696 /* ExploreCell.xib in Resources */,
-				FA0FC318280077B100CA0D9F /* FoodCell.xib in Resources */,
 				FAF16E0D27F53C6000D3842F /* Assets.xcassets in Resources */,
-				FA0FC31C28007CF400CA0D9F /* FoodItemCell.xib in Resources */,
+				423C32AE2801DC1E00264C86 /* FoodCell.xib in Resources */,
 				FAF16E0827F53C5E00D3842F /* Main.storyboard in Resources */,
 				FA0FC3242800836A00CA0D9F /* AcommodationCell.xib in Resources */,
+				423C32B62801DF2D00264C86 /* FoodItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,9 +420,9 @@
 				FAF16E0127F53C5E00D3842F /* AppDelegate.swift in Sources */,
 				FAF16E0327F53C5E00D3842F /* SceneDelegate.swift in Sources */,
 				FAB78C6727FEA6AA009D3696 /* ExploreCell.swift in Sources */,
-				FA0FC317280077B100CA0D9F /* FoodCell.swift in Sources */,
 				FA0FC32B2800839200CA0D9F /* AcommodationItemCell.swift in Sources */,
 				FA0FC31F2800835C00CA0D9F /* TourismCell.swift in Sources */,
+				423C32B52801DF2D00264C86 /* FoodItemCell.swift in Sources */,
 				FAB78C6327FEA4B3009D3696 /* TripItemCell.swift in Sources */,
 				FAF7CE8527FD0785004920B1 /* DetailsInfoViewController.swift in Sources */,
 				FAB78C5F27FEA3DB009D3696 /* TripCell.swift in Sources */,
@@ -431,9 +431,9 @@
 				FAF7CE8327FC8B56004920B1 /* CardViewController.swift in Sources */,
 				FA0FC3232800836A00CA0D9F /* AcommodationCell.swift in Sources */,
 				FA311DC427FDE32A002CA5A7 /* CategorizeCityViewController.swift in Sources */,
-				FA0FC31B28007CF400CA0D9F /* FoodItemCell.swift in Sources */,
 				FA0FC3272800838400CA0D9F /* TourismItemCell.swift in Sources */,
 				FAF7CE7D27FC8081004920B1 /* ListCell.swift in Sources */,
+				423C32AD2801DC1E00264C86 /* FoodCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

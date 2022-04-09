@@ -9,6 +9,7 @@ import UIKit
 
 class TourismItemCell: UICollectionViewCell {
 
+    @IBOutlet weak var tourismLabel: UILabel!
     @IBOutlet weak var tourismImage: UIImageView! {
         didSet {
         tourismImage.layer.cornerRadius = 10
