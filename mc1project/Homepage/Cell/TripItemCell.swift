@@ -13,6 +13,11 @@ class TripItemCell: UICollectionViewCell {
         didSet {
         tripImage.layer.cornerRadius = 10
             tripImage.layer.masksToBounds = true
+            let overlay = UIView()
+                        overlay.backgroundColor = UIColor(white: 0, alpha: 0.1) //change to your liking
+                        overlay.frame = CGRect(x: 0, y: 0, width: tripImage.frame.width, height: tripImage.frame.height)
+
+                        tripImage.addSubview(overlay)
         }
     }
     
