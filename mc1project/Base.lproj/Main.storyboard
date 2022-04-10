@@ -124,6 +124,7 @@
                     </view>
                     <connections>
                         <outlet property="categorizeTableView" destination="NnL-WA-34p" id="Y7r-LO-hpu"/>
+                        <outlet property="cityLabel" destination="pIo-yQ-Zxj" id="4Cj-hJ-mqK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JwK-Wk-CXH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

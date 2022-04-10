@@ -15,8 +15,8 @@ class AcommodationItemCell: UICollectionViewCell {
         acommodationImage.layer.cornerRadius = 10
             acommodationImage.layer.masksToBounds = true
             let overlay = UIView()
-            overlay.backgroundColor = UIColor(white: 0, alpha: 0.15) //change to your liking
-            overlay.frame = CGRect(x: 0, y: 0, width: acommodationImage.frame.width, height: acommodationImage.frame.height)
+            overlay.backgroundColor = UIColor(white: 0, alpha: 0.3) //change to your liking
+            overlay.frame = CGRect(x: 0, y: 85, width: acommodationImage.frame.width, height: acommodationImage.frame.height)
 
             acommodationImage.addSubview(overlay)
         }

@@ -15,8 +15,8 @@ class TourismItemCell: UICollectionViewCell {
         tourismImage.layer.cornerRadius = 10
             tourismImage.layer.masksToBounds = true
             let overlay = UIView()
-            overlay.backgroundColor = UIColor(white: 0, alpha: 0.15) //change to your liking
-            overlay.frame = CGRect(x: 0, y: 0, width: tourismImage.frame.width, height: tourismImage.frame.height)
+            overlay.backgroundColor = UIColor(white: 0, alpha: 0.3) //change to your liking
+            overlay.frame = CGRect(x: 0, y: 85, width: tourismImage.frame.width, height: tourismImage.frame.height)
 
             tourismImage.addSubview(overlay)
         }

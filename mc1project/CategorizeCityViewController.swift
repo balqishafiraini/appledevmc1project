@@ -11,6 +11,8 @@ class CategorizeCityViewController: UIViewController, UITableViewDelegate, UITab
     
     @IBOutlet weak var categorizeTableView: UITableView!
     
+    @IBOutlet weak var cityLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCell()
