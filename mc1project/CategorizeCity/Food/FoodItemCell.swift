@@ -13,14 +13,24 @@ class FoodItemCell: UICollectionViewCell {
         didSet {
             foodImage.layer.cornerRadius = 10
             foodImage.layer.masksToBounds = true
+            let overlay = UIView()
+            overlay.backgroundColor = UIColor(white: 0, alpha: 0.15) //change to your liking
+            overlay.frame = CGRect(x: 0, y: 0, width: foodImage.frame.width, height: foodImage.frame.height)
+
+            foodImage.addSubview(overlay)
         }
     }
 
-    @IBOutlet weak var foodLabel: UILabel!
+    @IBOutlet weak var foodLabel: UILabel! {
+        didSet {
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    
 
 }

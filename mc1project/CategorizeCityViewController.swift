@@ -20,6 +20,7 @@ class CategorizeCityViewController: UIViewController, UITableViewDelegate, UITab
         categorizeTableView.register(UINib(nibName: "FoodCell", bundle: nil), forCellReuseIdentifier: "foodCellID")
         categorizeTableView.register(UINib(nibName: "TourismCell", bundle: nil), forCellReuseIdentifier: "tourismCellID")
         categorizeTableView.register(UINib(nibName: "AcommodationCell", bundle: nil), forCellReuseIdentifier: "acommodationCellID")
+        categorizeTableView.register(UINib(nibName: "SliderCell", bundle: nil), forCellReuseIdentifier: "sliderCellID")
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -72,9 +73,9 @@ class CategorizeCityViewController: UIViewController, UITableViewDelegate, UITab
 
             return cellAcommodation
         } else {
-            let cell = (tableView.dequeueReusableCell(withIdentifier: "foodCellID", for: indexPath) as? FoodCell)!
+            let cellSlider = (tableView.dequeueReusableCell(withIdentifier: "sliderCellID", for: indexPath) as? SliderCell)!
 
-            return cell
+            return cellSlider
         }
     }
 }
