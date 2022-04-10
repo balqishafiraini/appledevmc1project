@@ -1,0 +1,33 @@
+import UIKit
+enum ColorPalette {
+    static let primary =  UIColor(red:0.000, green: 0.420, blue: 0.341, alpha: 1.000)
+    static let primaryContainer =  UIColor(red:0.486, green: 0.973, blue: 0.847, alpha: 1.000)
+    static let onPrimary =  UIColor(red:1.000, green: 1.000, blue: 1.000, alpha: 1.000)
+    static let onPrimaryContainer =  UIColor(red:0.000, green: 0.125, blue: 0.098, alpha: 1.000)
+
+    static let secondary =  UIColor(red:0.294, green: 0.388, blue: 0.357, alpha: 1.000)
+    static let secondaryContainer =  UIColor(red:0.804, green: 0.910, blue: 0.871, alpha: 1.000)
+    static let onSecondary =  UIColor(red:1.000, green: 1.000, blue: 1.000, alpha: 1.000)
+    static let onSecondaryContainer =  UIColor(red:0.027, green: 0.125, blue: 0.098, alpha: 1.000)
+
+    static let tertiary =  UIColor(red:0.255, green: 0.384, blue: 0.467, alpha: 1.000)
+    static let tertiaryContainer =  UIColor(red:0.773, green: 0.906, blue: 1.000, alpha: 1.000)
+    static let onTertiary =  UIColor(red:1.000, green: 1.000, blue: 1.000, alpha: 1.000)
+    static let onTertiaryContainer =  UIColor(red:0.000, green: 0.118, blue: 0.180, alpha: 1.000)
+
+    static let error =  UIColor(red:0.729, green: 0.106, blue: 0.106, alpha: 1.000)
+    static let errorContainer =  UIColor(red:1.000, green: 0.855, blue: 0.831, alpha: 1.000)
+    static let onError =  UIColor(red:1.000, green: 1.000, blue: 1.000, alpha: 1.000)
+    static let onErrorContainer =  UIColor(red:0.255, green: 0.000, blue: 0.004, alpha: 1.000)
+
+    static let surface =  UIColor(red:0.980, green: 0.992, blue: 0.980, alpha: 1.000)
+    static let surfaceVariant =  UIColor(red:0.859, green: 0.898, blue: 0.878, alpha: 1.000)
+    static let onSurface =  UIColor(red:0.098, green: 0.110, blue: 0.106, alpha: 1.000)
+    static let onSurfaveVariant =  UIColor(red:0.247, green: 0.286, blue: 0.271, alpha: 1.000)
+
+    static let background =  UIColor(red:0.980, green: 0.992, blue: 0.980, alpha: 1.000)
+    static let onBackground =  UIColor(red:0.098, green: 0.110, blue: 0.106, alpha: 1.000)
+
+    static let outline =  UIColor(red:0.439, green: 0.475, blue: 0.459, alpha: 1.000)
+    static let outline30 =  UIColor(red:0.439, green: 0.475, blue: 0.459, alpha: 0.300)
+}

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A071B7202802B94F000870EC /* DetailPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A071B71F2802B94F000870EC /* DetailPhotoCell.swift */; };
+		A083BDCD28002ED90081E24F /* DetailsPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A083BDCC28002ED90081E24F /* DetailsPhotoViewController.swift */; };
 		FA311DC427FDE32A002CA5A7 /* CategorizeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */; };
 		FACD88EB27FBF57D001D84EB /* TripCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD88EA27FBF57D001D84EB /* TripCell.swift */; };
 		FACD88ED27FC02F1001D84EB /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD88EC27FC02F1001D84EB /* ExploreCell.swift */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A071B71F2802B94F000870EC /* DetailPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoCell.swift; sourceTree = "<group>"; };
+		A083BDCC28002ED90081E24F /* DetailsPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPhotoViewController.swift; sourceTree = "<group>"; };
 		FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorizeCityViewController.swift; sourceTree = "<group>"; };
 		FACD88EA27FBF57D001D84EB /* TripCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCell.swift; sourceTree = "<group>"; };
 		FACD88EC27FC02F1001D84EB /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
@@ -171,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				FAF7CE7C27FC8081004920B1 /* ListCell.swift */,
+				FAF7CE7727FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift */,
 				FAF7CE8027FC889D004920B1 /* CardViewController.xib */,
-				FAF7CE8427FD0785004920B1 /* DetailsInfoViewController.swift */,
 				FAF7CE8227FC8B56004920B1 /* CardViewController.swift */,
 			);
 			path = DetailIsInfoSwipe;
@@ -181,7 +185,9 @@
 		FAF7CE8627FD0792004920B1 /* DetailsInfo */ = {
 			isa = PBXGroup;
 			children = (
-				FAF7CE7727FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift */,
+				FAF7CE8427FD0785004920B1 /* DetailsInfoViewController.swift */,
+				A083BDCC28002ED90081E24F /* DetailsPhotoViewController.swift */,
+				A071B71F2802B94F000870EC /* DetailPhotoCell.swift */,
 			);
 			name = DetailsInfo;
 			path = ../DetailsInfo;
@@ -319,7 +325,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A083BDCD28002ED90081E24F /* DetailsPhotoViewController.swift in Sources */,
 				FAF16E0527F53C5E00D3842F /* ViewController.swift in Sources */,
+				A071B7202802B94F000870EC /* DetailPhotoCell.swift in Sources */,
 				FAF16E0127F53C5E00D3842F /* AppDelegate.swift in Sources */,
 				FAF16E0327F53C5E00D3842F /* SceneDelegate.swift in Sources */,
 				FAF7CE8527FD0785004920B1 /* DetailsInfoViewController.swift in Sources */,
