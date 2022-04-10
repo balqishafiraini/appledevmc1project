@@ -16,6 +16,11 @@ class ExploreCell: UITableViewCell {
         didSet {
             exploreImage.layer.cornerRadius = 20
             exploreImage.layer.masksToBounds = true
+            let overlay = UIView()
+                        overlay.backgroundColor = UIColor(white: 0, alpha: 0.45) //change to your liking
+                        overlay.frame = CGRect(x: 0, y: 0, width: exploreImage.frame.width, height: exploreImage.frame.height)
+
+                        exploreImage.addSubview(overlay)
 
         }
     }
