@@ -51,6 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return section == 0 ? "Popular City" : "Explore More"
 
     }
+    
 
     
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
