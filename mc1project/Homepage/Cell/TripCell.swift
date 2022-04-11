@@ -11,9 +11,9 @@ class TripCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
     
     @IBOutlet weak var tripCollection: UICollectionView!
     
-    var tripImageArray = ["bali", "bali2", "bali2"]
-    var tripArray = ["Bali", "Wakatobi", "Bali"]
-    var tripDescArray = ["Pulau Seribu Pura", "Pulau Komodo", "Pulau Komodo"]
+    var tripImageArray = ["bali", "semarang", "belitung"]
+    var tripArray = ["Bali", "Semarang", "Belitung"]
+    var tripDescArray = ["Pulau Seribu Pura", "Kota Lumpia", "Kota 1001 Warung Kopi"]
 
 
     override func awakeFromNib() {

@@ -17,10 +17,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // datasourcePopular
     
     // datasourceExplore
-    var exploreImageArray = ["bali2", "bali3", "bali2", "bali3", "bali2", "bali3"]
-    var exploreCityArray = ["Bandung", "Semarang", "Semarang", "Semarang", "Semarang", "Semarang"]
-    
-    
+    var exploreImageArray = ["lampung", "medan", "mentawai", "solo", "yogyakarta"]
+    var exploreCityArray = ["Lampung", "Medan", "Mentawai", "Solo", "Yogyakarta"]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,4 +81,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return cell
         }
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(identifier: "CategorizeCityID") as? CategorizeCityViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
 }

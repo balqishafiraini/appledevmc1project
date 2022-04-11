@@ -25,8 +25,8 @@ class ExploreCell: UITableViewCell {
         }
     }
     
-    var exploreImageArray = ["bali2", "bali3", "bali2", "bali3", "bali2", "bali3"]
-    var exploreCityArray = ["Bandung", "Semarang", "Semarang", "Semarang", "Semarang", "Semarang"]
+    var exploreImageArray = ["lampung", "medan", "mentawai", "solo", "yogyakarta"]
+    var exploreCityArray = ["Lampung", "Medan", "Mentawai", "Solo", "Yogyakarta"]
     
     override func awakeFromNib() {
         super.awakeFromNib()
