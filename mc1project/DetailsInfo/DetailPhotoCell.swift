@@ -16,4 +16,11 @@ class DetailPhotoCell: UICollectionViewCell {
         }
     }
     
+    @IBOutlet weak var galleryImg: UIImageView! {
+        didSet {
+            galleryImg.layer.cornerRadius = 15
+            galleryImg.layer.masksToBounds = true
+        }
+    }
+    
 }
