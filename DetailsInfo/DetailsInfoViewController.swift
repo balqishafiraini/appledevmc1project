@@ -19,9 +19,26 @@ class DetailsInfoViewController: UIViewController {
     @IBOutlet weak var mapImgView: UIImageView!
     @IBOutlet weak var contentView: UIView!
     
+    var bannerImg = "bali"
+    var mapImg = "bali2"
+    var destinationTxt = "Amed Beach in Bali is most likely already on your travel itinerary if you're a keen diver. The island’s eastern shoreline is an underwater playground, with Amed Beach attracting the larger crowd of divers."
+    var operatingHourTxt = "08.00 - 17.00"
+    var priceTxt = "Rp 20.000,-"
+    var locationTxt = "Amed beach, Bali"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         customTabView()
+        initDetail()
+    }
+    
+    func initDetail() {
+        destImgView.image = UIImage(named: bannerImg)
+        aboutLbl.text = destinationTxt
+        opHourLbl.text = operatingHourTxt
+        priceLbl.text = priceTxt
+        locLbl.text = locationTxt
+        mapImgView.image = UIImage(named: mapImg)
     }
     
     func customTabView(){
