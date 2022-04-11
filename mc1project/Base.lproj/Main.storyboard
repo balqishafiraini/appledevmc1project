@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Haq-zr-N7B">
-                                <rect key="frame" x="16" y="88" width="358" height="713"/>
+                                <rect key="frame" x="16" y="0.0" width="358" height="801"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <sections/>
@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ycB-c3-s6F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3516.9230769230767" y="74.644549763033169"/>
+            <point key="canvasLocation" x="4314" y="75"/>
         </scene>
         <!--Categorize City View Controller-->
         <scene sceneID="Moq-Wo-bXN">
@@ -103,34 +103,17 @@
                                     <outlet property="delegate" destination="jQH-GX-Kk9" id="fkw-uA-Iut"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50Q-I0-HOT">
-                                <rect key="frame" x="16" y="44" width="46" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.0" green="0.4196078479" blue="0.34117650989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="chevron.backward" catalog="system">
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="23"/>
-                                </buttonConfiguration>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIo-yQ-Zxj">
-                                <rect key="frame" x="170" y="53" width="50" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                <color key="textColor" red="0.0" green="0.4196078479" blue="0.34117650989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4be-rK-nho"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="categorizeTableView" destination="NnL-WA-34p" id="Y7r-LO-hpu"/>
-                        <outlet property="cityLabel" destination="pIo-yQ-Zxj" id="4Cj-hJ-mqK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JwK-Wk-CXH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816.9230769230769" y="74.644549763033169"/>
+            <point key="canvasLocation" x="1857" y="75"/>
         </scene>
         <!--Details Info Swipe View Controller-->
         <scene sceneID="mat-LT-rOs">
@@ -223,7 +206,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jrd-8s-f85" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2609.2307692307691" y="74.644549763033169"/>
+            <point key="canvasLocation" x="3482" y="75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oRH-Zq-QcV">
@@ -244,6 +227,7 @@
             <point key="canvasLocation" x="21.538461538461537" y="75.355450236966817"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.0" green="0.4196078479" blue="0.34117650989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="chevron.backward" catalog="system" width="96" height="128"/>
         <image name="header_fotra" width="403" height="130"/>

@@ -30,6 +30,7 @@
 		FAC54A552802AAF6008C70BA /* SliderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC54A532802AAF6008C70BA /* SliderCell.xib */; };
 		FAC54A582802AB02008C70BA /* SliderItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC54A562802AB02008C70BA /* SliderItemCell.swift */; };
 		FAC54A592802AB02008C70BA /* SliderItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC54A572802AB02008C70BA /* SliderItemCell.xib */; };
+		FAC54A5C2803D184008C70BA /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC54A5B2803D184008C70BA /* CategoryModel.swift */; };
 		FAF16E0127F53C5E00D3842F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E0027F53C5E00D3842F /* AppDelegate.swift */; };
 		FAF16E0327F53C5E00D3842F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E0227F53C5E00D3842F /* SceneDelegate.swift */; };
 		FAF16E0527F53C5E00D3842F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E0427F53C5E00D3842F /* ViewController.swift */; };
@@ -88,6 +89,7 @@
 		FAC54A532802AAF6008C70BA /* SliderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderCell.xib; sourceTree = "<group>"; };
 		FAC54A562802AB02008C70BA /* SliderItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderItemCell.swift; sourceTree = "<group>"; };
 		FAC54A572802AB02008C70BA /* SliderItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SliderItemCell.xib; sourceTree = "<group>"; };
+		FAC54A5B2803D184008C70BA /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		FAF16DFD27F53C5E00D3842F /* mc1project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mc1project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF16E0027F53C5E00D3842F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAF16E0227F53C5E00D3842F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -202,6 +204,14 @@
 			path = Slider;
 			sourceTree = "<group>";
 		};
+		FAC54A5A2803D169008C70BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC54A5B2803D184008C70BA /* CategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FAF16DF427F53C5E00D3842F = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +235,7 @@
 		FAF16DFF27F53C5E00D3842F /* mc1project */ = {
 			isa = PBXGroup;
 			children = (
+				FAC54A5A2803D169008C70BA /* Model */,
 				FAF16E0027F53C5E00D3842F /* AppDelegate.swift */,
 				FAF16E0227F53C5E00D3842F /* SceneDelegate.swift */,
 				FAF7CE8627FD0792004920B1 /* DetailsInfo */,
@@ -434,6 +445,7 @@
 				FAC54A582802AB02008C70BA /* SliderItemCell.swift in Sources */,
 				FAF16E0527F53C5E00D3842F /* ViewController.swift in Sources */,
 				FAF16E0127F53C5E00D3842F /* AppDelegate.swift in Sources */,
+				FAC54A5C2803D184008C70BA /* CategoryModel.swift in Sources */,
 				FAF16E0327F53C5E00D3842F /* SceneDelegate.swift in Sources */,
 				FAB78C6727FEA6AA009D3696 /* ExploreCell.swift in Sources */,
 				FA0FC32B2800839200CA0D9F /* AcommodationItemCell.swift in Sources */,

@@ -11,12 +11,19 @@ class TourismCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDa
     
     @IBOutlet weak var tourismCollection: UICollectionView!
     
-    var tourismImageArray = ["bali", "bali2", "bali2"]
-    var tourismLabelArray = ["Bali", "Wakatobi", "Bali"]
+    var tourismObject: CityModel? {
+        didSet {
+            setupCell()
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
         tourismCollection.register(UINib(nibName: "TourismItemCell", bundle: nil), forCellWithReuseIdentifier: "tourismItemCellID")
+    }
+    
+    func setupCell() {
+        tourismCollection.reloadData()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -26,13 +33,13 @@ class TourismCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDa
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tourismImageArray.count
+        return tourismObject?.tourism?.count ?? 0
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellTourism = (collectionView.dequeueReusableCell(withReuseIdentifier: "tourismItemCellID", for: indexPath) as? TourismItemCell)!
-        cellTourism.tourismImage.image = UIImage(named: tourismImageArray[indexPath.row])
-        cellTourism.tourismLabel.text = tourismLabelArray[indexPath.row]
+        cellTourism.tourismImage.image = UIImage(named: tourismObject?.tourism?[indexPath.row].tourismImage ?? "")
+        cellTourism.tourismLabel.text = tourismObject?.tourism?[indexPath.row].tourismName
         
         return cellTourism
     }

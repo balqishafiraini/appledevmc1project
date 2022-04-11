@@ -11,13 +11,23 @@ class FoodCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataS
 
     @IBOutlet weak var foodCollection: UICollectionView!
     
-    var foodImageArray = ["bali2", "bali3", "bali2", "bali3", "bali2", "bali3"]
-    var foodLabelArray = ["Bandung", "Semarang", "Semarang", "Semarang", "Semarang", "Semarang"]
+    var foodObject: CityModel? {
+        didSet {
+            setupCell()
+        }
+    }
+    
+//    var foodImageArray = ["bali2", "bali3", "bali2", "bali3", "bali2", "bali3"]
+//    var foodLabelArray = ["Bandung", "Semarang", "Semarang", "Semarang", "Semarang", "Semarang"]
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
         foodCollection.register(UINib(nibName: "FoodItemCell", bundle: nil), forCellWithReuseIdentifier: "foodItemCellID")
+    }
+    
+    func setupCell() {
+        foodCollection.reloadData()
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -27,13 +37,13 @@ class FoodCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return foodImageArray.count
+        return foodObject?.food?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let foodCell = (collectionView.dequeueReusableCell(withReuseIdentifier: "foodItemCellID", for: indexPath) as? FoodItemCell)!
-        foodCell.foodImage.image = UIImage(named: foodImageArray[indexPath.row])
-        foodCell.foodLabel.text = foodLabelArray[indexPath.row]
+        foodCell.foodImage.image = UIImage(named: foodObject?.food?[indexPath.row].foodImage ?? "")
+        foodCell.foodLabel.text = foodObject?.food?[indexPath.row].foodName ?? ""
         
         return foodCell
     }
