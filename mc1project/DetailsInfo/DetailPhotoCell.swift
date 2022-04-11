@@ -2,17 +2,18 @@
 //  DetailPhotoCell.swift
 //  mc1project
 //
-//  Created by Vendly on 10/04/22.
+//  Created by Vendly on 11/04/22.
 //
 
 import UIKit
 
 class DetailPhotoCell: UICollectionViewCell {
     
-    @IBOutlet weak var detailphotoImg: UIImageView! {
+    @IBOutlet weak var detailPhotoImg: UIImageView! {
         didSet {
-            detailphotoImg.layer.cornerRadius = 15
-            detailphotoImg.layer.masksToBounds = true
+            detailPhotoImg.layer.cornerRadius = 15
+            detailPhotoImg.layer.masksToBounds = true
         }
     }
+    
 }
