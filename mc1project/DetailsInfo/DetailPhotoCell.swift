@@ -2,7 +2,7 @@
 //  DetailPhotoCell.swift
 //  mc1project
 //
-//  Created by Vendly on 11/04/22.
+//  Created by Vendly on 12/04/22.
 //
 
 import UIKit
@@ -22,5 +22,4 @@ class DetailPhotoCell: UICollectionViewCell {
             galleryImg.layer.masksToBounds = true
         }
     }
-    
 }

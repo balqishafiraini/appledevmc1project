@@ -12,15 +12,14 @@ class DetailsInfoViewController: UIViewController {
     @IBOutlet weak var backBtn: UIButton!
     @IBOutlet weak var destImgView: UIImageView!
     @IBOutlet weak var tabView: UIView!
-    @IBOutlet weak var aboutLbl: UILabel!
+    @IBOutlet weak var aboutTxtView: UITextView!
     @IBOutlet weak var opHourLbl: UILabel!
     @IBOutlet weak var priceLbl: UILabel!
     @IBOutlet weak var locLbl: UILabel!
-    @IBOutlet weak var mapImgView: UIImageView!
     @IBOutlet weak var contentView: UIView!
     
     var bannerImg = "bali"
-    var mapImg = "bali2"
+    var mapImage = "bali2"
     var destinationTxt = "Amed Beach in Bali is most likely already on your travel itinerary if you're a keen diver. The island’s eastern shoreline is an underwater playground, with Amed Beach attracting the larger crowd of divers."
     var operatingHourTxt = "08.00 - 17.00"
     var priceTxt = "Rp 20.000,-"
@@ -34,11 +33,10 @@ class DetailsInfoViewController: UIViewController {
     
     func initDetail() {
         destImgView.image = UIImage(named: bannerImg)
-        aboutLbl.text = destinationTxt
+        aboutTxtView.text = destinationTxt
         opHourLbl.text = operatingHourTxt
         priceLbl.text = priceTxt
         locLbl.text = locationTxt
-        mapImgView.image = UIImage(named: mapImg)
     }
     
     func customTabView(){
@@ -62,17 +60,22 @@ class DetailsInfoViewController: UIViewController {
 
     @IBAction func onClickTabBar(_ sender: UIButton) {
         let tag = sender.tag
-        
+                
         if tag == 1 {
             guard let detailInfo = self.storyboard?.instantiateViewController(withIdentifier:
-                                "DetailsInfoViewController") as? DetailsInfoViewController else {return}
+                                "detailsInfoID") as? DetailsInfoViewController else {return}
             contentView.addSubview(detailInfo.view)
             detailInfo.didMove(toParent: self)
         } else {
-            guard let detailPhoto = self.storyboard?.instantiateViewController(withIdentifier:
-                                "DetailsPhotoViewController") as? DetailsPhotoViewController else {return}
-            contentView.addSubview(detailPhoto.view)
-            detailPhoto.didMove(toParent: self)
+            self.performSegue(withIdentifier: "detailPhotoID", sender: sender)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailPhotoID" {
+            if let imageDetail = segue.destination as? DetailsPhotoViewController {
+                imageDetail.detailPhotoArr = "bali"
+            }
         }
     }
     
