@@ -7,7 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+protocol CustomTableViewCellDelegate {
+    func passTheCurrent(tableIndex: Int, collectionViewIndex: Int)
+}
+
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CustomTableViewCellDelegate {
+
+    
     
     
     //HOMEPAGE
@@ -77,7 +83,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = (tableView.dequeueReusableCell(withIdentifier: "tripCellID", for: indexPath) as? TripCell)!
-            
+//            cell.delegate = self
             return cell
         } else {
             let cell = (tableView.dequeueReusableCell(withIdentifier: "exploreCellID", for: indexPath) as? ExploreCell)!
@@ -88,15 +94,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let vc = storyboard?.instantiateViewController(identifier: "CategorizeCityID") as? CategorizeCityViewController {
             vc.category = category[indexPath.row]
             self.navigationController?.pushViewController(vc, animated: true)
-            
+
         }
     }
     
     
+    func passTheCurrent(tableIndex: Int, collectionViewIndex: Int) {
+        
+    }
     
 }
