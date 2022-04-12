@@ -7,14 +7,17 @@
 
 import UIKit
 
+protocol TripCellDelegate: AnyObject {
+    func navigateToDetail(dataSelected: CategoryModel?)
+}
+
 class TripCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var tripCollection: UICollectionView!
-    
-    var tripImageArray = ["bali", "semarang", "belitung"]
-    var tripArray = ["Bali", "Semarang", "Belitung"]
-    var tripDescArray = ["Pulau Seribu Pura", "Kota Lumpia", "Kota 1001 Warung Kopi"]
 
+    var objectModel: [CategoryModel]?
+    
+    weak var delegate: TripCellDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -29,18 +32,20 @@ class TripCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDel
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tripArray.count
+        return objectModel?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cellTrip = (collectionView.dequeueReusableCell(withReuseIdentifier: "tripItemCellID", for: indexPath) as? TripItemCell)!
-            cellTrip.tripImage.image = UIImage(named: tripImageArray[indexPath.row])
-            cellTrip.tripName.text = tripArray[indexPath.row]
+        cellTrip.tripImage.image = UIImage(named: objectModel?[indexPath.row].image ?? "")
+        cellTrip.tripName.text = objectModel?[indexPath.row].cityName
+        cellTrip.tripDesc.text = objectModel?[indexPath.row].cityDesc
             return cellTrip
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath.row)
+        self.delegate?.navigateToDetail(dataSelected: objectModel?[indexPath.row])
     }
     
 }

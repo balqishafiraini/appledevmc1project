@@ -10,10 +10,13 @@ import Foundation
 struct CategoryModel {
     var image: String?
     var cityName: String?
+    var isPopular: Bool?
+    var cityDesc: String?
     var cityAttribute: CityModel?
 }
 
 struct CityModel: Codable {
+    var slider: [String]?
     var food: [FoodModel]?
     var tourism: [TourismModel]?
     var accommodation: [AccommodationModel]?

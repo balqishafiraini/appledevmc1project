@@ -12,10 +12,13 @@ class SliderCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDat
 
     @IBOutlet weak var sliderCollection: UICollectionView!
     
-    @IBOutlet weak var pageControl: UIPageControl! 
+    @IBOutlet weak var pageControl: UIPageControl!
     
-    var sliderImageArray = ["bali", "bali2", "bali2", "bali2", "bali2"]
-    var sliderLabelArray = ["Bali", "Wakatobi", "Bali", "Wakatobi", "Bali"]
+    var sliderObject: CityModel? {
+        didSet {
+            setupCell()
+        }
+    }
     
     var thisWidth:CGFloat = 0
     
@@ -27,6 +30,10 @@ class SliderCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDat
             sliderCollection.dataSource = self
 
     }
+    
+    func setupCell() {
+        sliderCollection.reloadData()
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -34,16 +41,14 @@ class SliderCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDat
         // Configure the view for the selected state
     }
     
-    
-    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return sliderImageArray.count
+        return sliderObject?.slider?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellSlider = (collectionView.dequeueReusableCell(withReuseIdentifier: "sliderItemCellID", for: indexPath) as? SliderItemCell)!
-        cellSlider.sliderImage.image = UIImage(named: sliderImageArray[indexPath.row])
-        
+        cellSlider.sliderImage.image = UIImage(named: sliderObject?.slider?[indexPath.row] ?? "")
+
         return cellSlider
     }
     
