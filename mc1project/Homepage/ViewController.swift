@@ -39,7 +39,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         return collectionView == exploreCollectionView ? exploreCityArray.count : tripArray.count
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if collectionView == exploreCollectionView {
             let cellExplore = (collectionView.dequeueReusableCell(withReuseIdentifier: "exploreCellID", for: indexPath) as? ExploreCell)!
