@@ -85,6 +85,7 @@ class CategorizeCityViewController: UIViewController, UITableViewDelegate, UITab
             return cellAcommodation
         } else {
             let cellSlider = (tableView.dequeueReusableCell(withIdentifier: "sliderCellID", for: indexPath) as? SliderCell)!
+            cellSlider.sliderObject = category?.cityAttribute
 
             return cellSlider
         }

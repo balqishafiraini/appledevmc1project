@@ -31,7 +31,7 @@
                             <outlet property="delegate" destination="KGk-i7-Jjw" id="VYd-E3-xRe"/>
                         </connections>
                     </collectionView>
-                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vpt-vO-nEY">
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Vpt-vO-nEY">
                         <rect key="frame" x="100" y="170" width="140" height="30"/>
                         <color key="pageIndicatorTintColor" systemColor="systemGray2Color"/>
                         <color key="currentPageIndicatorTintColor" red="0.0" green="0.4196078479" blue="0.34117650989999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
