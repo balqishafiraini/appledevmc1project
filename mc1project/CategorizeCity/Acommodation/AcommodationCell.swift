@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol AccommodationCellDelegate: AnyObject {
+    func navigateToDetail(itemPassed: DetailModel?)
+}
+
 class AcommodationCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var acommodationCollection: UICollectionView!
@@ -16,6 +20,8 @@ class AcommodationCell: UITableViewCell, UICollectionViewDelegate, UICollectionV
             setupCell()
         }
     }
+    
+    weak var delegate: AccommodationCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -45,7 +51,9 @@ class AcommodationCell: UITableViewCell, UICollectionViewDelegate, UICollectionV
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+        if let data = accommodationObject?.food?[indexPath.row].detail?[0] {
+            self.delegate?.navigateToDetail(itemPassed: data)
+        }
     }
     
 }

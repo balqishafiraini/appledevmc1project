@@ -18,12 +18,7 @@ class DetailsInfoViewController: UIViewController {
     @IBOutlet weak var locLbl: UILabel!
     @IBOutlet weak var contentView: UIView!
     
-    var bannerImg = "bali"
-    var mapImage = "bali2"
-    var destinationTxt = "Amed Beach in Bali is most likely already on your travel itinerary if you're a keen diver. The island’s eastern shoreline is an underwater playground, with Amed Beach attracting the larger crowd of divers."
-    var operatingHourTxt = "08.00 - 17.00"
-    var priceTxt = "Rp 20.000,-"
-    var locationTxt = "Amed beach, Bali"
+    var detail: DetailModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +27,11 @@ class DetailsInfoViewController: UIViewController {
     }
     
     func initDetail() {
-        destImgView.image = UIImage(named: bannerImg)
-        aboutTxtView.text = destinationTxt
-        opHourLbl.text = operatingHourTxt
-        priceLbl.text = priceTxt
-        locLbl.text = locationTxt
+        destImgView.image = UIImage(named: detail?.detailImage ?? "")
+        aboutTxtView.text = detail?.desc
+        opHourLbl.text = detail?.open_hour
+        priceLbl.text = detail?.price
+        locLbl.text = detail?.location
     }
     
     func customTabView(){
@@ -74,7 +69,7 @@ class DetailsInfoViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "detailPhotoID" {
             if let imageDetail = segue.destination as? DetailsPhotoViewController {
-                imageDetail.detailPhotoArr = "bali"
+                imageDetail.detailPhotoArr = detail?.image
             }
         }
     }

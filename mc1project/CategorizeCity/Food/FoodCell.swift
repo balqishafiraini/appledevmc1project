@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol FoodCellDelegate: AnyObject {
+    func navigateToDetail(itemPassed: DetailModel?)
+}
+
 class FoodCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
 
     @IBOutlet weak var foodCollection: UICollectionView!
@@ -17,8 +21,7 @@ class FoodCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataS
         }
     }
     
-//    var foodImageArray = ["bali2", "bali3", "bali2", "bali3", "bali2", "bali3"]
-//    var foodLabelArray = ["Bandung", "Semarang", "Semarang", "Semarang", "Semarang", "Semarang"]
+    weak var delegate: FoodCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -49,7 +52,9 @@ class FoodCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
+        if let data = foodObject?.food?[indexPath.row].detail?[0] {
+            self.delegate?.navigateToDetail(itemPassed: data)
+        }
     }
     
 }

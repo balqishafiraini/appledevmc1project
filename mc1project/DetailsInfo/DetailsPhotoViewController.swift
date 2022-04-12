@@ -13,7 +13,7 @@ class DetailsPhotoViewController: UIViewController, UICollectionViewDelegate, UI
     
     @IBOutlet weak var detailPhotoCollection: UICollectionView!
     
-    var detailPhotoArr: String?
+    var detailPhotoArr: [String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +21,13 @@ class DetailsPhotoViewController: UIViewController, UICollectionViewDelegate, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return detailPhotoArr!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         print(detailPhotoArr)
         let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "detailPhotoID", for: indexPath) as? DetailPhotoCell)!
-        cell.detailPhotoImg.image = UIImage(named: detailPhotoArr ?? "")
+        cell.detailPhotoImg.image = UIImage(named: detailPhotoArr![indexPath.row])
         return cell
     }
     

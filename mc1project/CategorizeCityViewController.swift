@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CategorizeCityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CategorizeCityViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FoodCellDelegate, TourismCellDelegate, AccommodationCellDelegate {
     
     @IBOutlet weak var categorizeTableView: UITableView!
     
@@ -72,22 +72,32 @@ class CategorizeCityViewController: UIViewController, UITableViewDelegate, UITab
             
         guard let cellFood = (tableView.dequeueReusableCell(withIdentifier: "foodCellID", for: indexPath) as? FoodCell) else { return UITableViewCell() }
             cellFood.foodObject = category?.cityAttribute
+            cellFood.delegate = self
             return cellFood
         }
         else if indexPath.section == 2 {
             let cellTourism = (tableView.dequeueReusableCell(withIdentifier: "tourismCellID", for: indexPath) as? TourismCell)!
             cellTourism.tourismObject = category?.cityAttribute
+            cellTourism.delegate = self
             return cellTourism
         }
         else if indexPath.section == 3 {
             let cellAcommodation = (tableView.dequeueReusableCell(withIdentifier: "acommodationCellID", for: indexPath) as? AcommodationCell)!
             cellAcommodation.accommodationObject = category?.cityAttribute
+            cellAcommodation.delegate = self
             return cellAcommodation
         } else {
             let cellSlider = (tableView.dequeueReusableCell(withIdentifier: "sliderCellID", for: indexPath) as? SliderCell)!
             cellSlider.sliderObject = category?.cityAttribute
 
             return cellSlider
+        }
+    }
+    
+    func navigateToDetail(itemPassed: DetailModel?) {
+        if let vc = storyboard?.instantiateViewController(identifier: "detailsInfoID") as? DetailsInfoViewController {
+            vc.detail = itemPassed
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }
