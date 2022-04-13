@@ -51,7 +51,7 @@ class TourismCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDa
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if let data = tourismObject?.food?[indexPath.row].detail?[0] {
+        if let data = tourismObject?.tourism?[indexPath.row].detail?[0] {
             self.delegate?.navigateToDetail(itemPassed: data)
         }
     }

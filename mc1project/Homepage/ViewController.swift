@@ -27,7 +27,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 isPopular: false,
                 cityDesc: "",
                 cityAttribute: CityModel(
-                    slider: ["bali", "yogyakarta"],
+                    slider: ["lampung", "yogyakarta"],
                     food: [
                         FoodModel(
                             foodName: "Bakso Son Haji Sony",
@@ -35,96 +35,96 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                             detail: [DetailModel(
                                 detailName: "Bakso Son Haji Sony",
                                 detailImage: "baksoSony",
-                                desc: "Lorem ipsum dolor sit",
-                                image: ["lampung", "rumahKayu", "newlg"],
-                                price: "1000",
-                                location: "Lampung",
-                                open_hour: "12.00"
+                                desc: "In Bandar Lampung, meatballs which are better known as the Bakso Sony brand include the legendary meatballs. The reason is that almost the majority of Bandar Lampung residents have clearly tasted the delicacy of Sony's Meatballs.",
+                                image: ["baksoSony"],
+                                price: "20-40k",
+                                location: "Jln. Wolter Monginsidi no. 42A, Bandar Lampung",
+                                open_hour: "10.00 - 20.00"
                             )]),
                         FoodModel(
                             foodName: "Rumah Makan Jumbo Kakap",
                             foodImage: "jumbokakap",
                             detail: [DetailModel(
-                                detailName: "Bakso Son Haji Sony",
-                                detailImage: "baksoSony",
-                                desc: "Lorem ipsum dolor sit",
-                                image: ["lampung", "rumahKayu", "newlg"],
-                                price: "1000",
-                                location: "Lampung",
-                                open_hour: "12.00"
+                                detailName: "Rumah Makan Jumbo Kakap",
+                                detailImage: "jumbokakap",
+                                desc: "Unpretentious restaurant offering seafood specialties, a convivial atmosphere & outdoor seating. We serve fresh and high quality seafood since 2010 Lampung best steamed fish",
+                                image: ["jumbokakap"],
+                                price: "75-200k",
+                                location: "Jln. Ikan Kakap No. 45, Bandar Lampung",
+                                open_hour: "11.00 - 21.00"
                             )]),
                         FoodModel(
-                            foodName: "Restaurant Rumah Kayu",
+                            foodName: "Taman Santap Rumah Kayu",
                             foodImage: "rumahKayu",
                             detail: [DetailModel(
-                                detailName: "Bakso Son Haji Sony",
-                                detailImage: "baksoSony",
-                                desc: "Lorem ipsum dolor sit",
-                                image: ["lampung", "rumahKayu", "newlg"],
-                                price: "1000",
-                                location: "Lampung",
-                                open_hour: "12.00"
+                                detailName: "Taman Santap Rumah Kayu",
+                                detailImage: "rumahKayu",
+                                desc: "The place is very beautiful and shady, the chairs are very many ranging from tables to lesehan. Very suitable for gathering with family, co-workers, friends. The fish pond is large and there is a children's play area.",
+                                image: ["rumahKayu"],
+                                price: "100-200k",
+                                location: "Jl. Arief Rahman Hakim No. 45, Way Halim, Bandar Lampung",
+                                open_hour: "10.00-20.00"
                             )]),
                         FoodModel(
                             foodName: "Rumah Makan New LG",
                             foodImage: "newlg",
                             detail: [DetailModel(
-                                detailName: "Bakso Son Haji Sony",
-                                detailImage: "baksoSony",
-                                desc: "Lorem ipsum dolor sit",
-                                image: ["lampung", "rumahKayu", "newlg"],
-                                price: "1000",
-                                location: "Lampung",
-                                open_hour: "12.00"
+                                detailName: "Rumah Makan New LG",
+                                detailImage: "newlg",
+                                desc: "The restaurant is most famous for its special dish, namely the menu of grilled rice at a friendly price. This restaurant is already quite famous and has become a favorite culinary place for local residents.",
+                                image: ["newlg"],
+                                price: "20-100k",
+                                location: "Jl. Way Sekampung blok A no.1 Rw. Laut, Enggal, Bandar Lampung",
+                                open_hour: "09.00-20.30"
                             )]),
                         FoodModel(
                             foodName: "Pempek 123",
                             foodImage: "pempek123",
                             detail: [DetailModel(
-                                detailName: "Bakso Son Haji Sony",
-                                detailImage: "baksoSony",
-                                desc: "Lorem ipsum dolor sit",
-                                image: ["lampung", "rumahKayu", "newlg"],
-                                price: "1000",
-                                location: "Lampung",
-                                open_hour: "12.00"
+                                detailName: "Pempek 123",
+                                detailImage: "pempek123",
+                                desc: "Pempek 123 Lampung sells delicious fish pempek typical of Lampung with fresh fish ingredients and natural spices. The aroma and taste of real fish instead of flavoring make Pempek 123 Lampung very delicious.",
+                                image: ["pempek123"],
+                                price: "25-100k",
+                                location: "Jl. Jend. Sudirman No. 15, Bandar Lampung",
+                                open_hour: "09.00 - 17.00"
                             )]),
                         FoodModel(
                             foodName: "Pindang Meranjat Riu",
                             foodImage: "pindang",
                             detail: [DetailModel(
-                                detailName: "Bakso Son Haji Sony",
-                                detailImage: "baksoSony",
-                                desc: "Lorem ipsum dolor sit",
-                                image: ["lampung", "rumahKayu", "newlg"],
-                                price: "1000",
-                                location: "Lampung",
-                                open_hour: "12.00"
+                                detailName: "Pindang Meranjat Riu",
+                                detailImage: "pindang",
+                                desc: "THE SQUARE Offering great sea views and modern design, The Square Restaurant serves Asian and international cuisine in both a buffet and a la carte style.",
+                                image: ["pindang"],
+                                price: "175-500k",
+                                location: "Jl. Gatot Subroto no.136 Hotel Novotel Lampung, Bandar Lampung",
+                                open_hour: "06.00-22.00"
                             )])],
                     tourism: [
                         TourismModel(
                             tourismName: "Pantai Marina",
                             tourismImage: "pantaimarina",
                             detail: [DetailModel(
-                                detailName: "Bakso Son Haji Sony",
-                                detailImage: "baksoSony",
-                                desc: "Lorem ipsum dolor sit",
-                                image: ["lampung", "rumahKayu", "newlg"],
-                                price: "1000",
-                                location: "Lampung",
-                                open_hour: "12.00"
+                                detailName: "Pantai Marina",
+                                detailImage: "pantaimarina",
+                                desc: "Small bay backed by a cliffside cave, with a paved observation deck, rock formations & strong waves.",
+                                image: ["pantaimarina"],
+                                price: "10k",
+                                location: "Pantai Marina, Kalianda, Lampung Selatan, Lampung",
+                                open_hour: ""
                             )]),
                         TourismModel(
                             tourismName: "Pantai Arang",
                             tourismImage: "pantaiarang",
                             detail: [DetailModel(
-                                detailName: "Bakso Son Haji Sony",
-                                detailImage: "baksoSony",
-                                desc: "Lorem ipsum dolor sit",
-                                image: ["lampung", "rumahKayu", "newlg"],
-                                price: "1000",
-                                location: "Lampung",
-                                open_hour: "12.00"
+                                detailName: "Pantai Arang",
+                                detailImage: "pantaiarang",
+                                desc: "At Charcoal Beach, the place is really suitable for those of you who want to take a vacation and not far from the center of Bandar Lampung City. Here you can relax with friends or family. One of the attractions at Arang Beach is that you can relax on the cliffs of the hills with sea views.",
+                                image: ["pantaiarang"],
+                                price: "150k",
+                                location: "Pantai Arang, Kalianda, Lampung Selatan, Lampung",
+                                open_hour: "15.00-21.00 (weekdays), 09.00-21.00 (weekend)"
                             )]),
                         TourismModel(
                             tourismName: "Pantai Gigi Hiu",
