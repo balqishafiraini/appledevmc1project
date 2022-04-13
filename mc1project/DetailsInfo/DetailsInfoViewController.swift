@@ -34,6 +34,11 @@ class DetailsInfoViewController: UIViewController {
         opHourTxtView.text = detail?.open_hour
         priceTxtView.text = detail?.price
         locationTxtView.text = detail?.location
+        
+        aboutTxtView.isEditable = false
+        opHourTxtView.isEditable = false
+        priceTxtView.isEditable = false
+        locationTxtView.isEditable = false
     }
     
     func customTabView(){
