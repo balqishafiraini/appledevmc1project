@@ -9,14 +9,15 @@ import UIKit
 
 class DetailsInfoViewController: UIViewController {
 
-    @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var titleLbl: UILabel!
     @IBOutlet weak var destImgView: UIImageView!
     @IBOutlet weak var tabView: UIView!
     @IBOutlet weak var aboutTxtView: UITextView!
-    @IBOutlet weak var opHourLbl: UILabel!
-    @IBOutlet weak var priceLbl: UILabel!
-    @IBOutlet weak var locLbl: UILabel!
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var opHourTxtView: UITextView!
+    @IBOutlet weak var priceTxtView: UITextView!
+    @IBOutlet weak var locationTxtView: UITextView!
+    
     
     var detail: DetailModel?
     
@@ -27,11 +28,12 @@ class DetailsInfoViewController: UIViewController {
     }
     
     func initDetail() {
+        titleLbl.text = detail?.detailName
         destImgView.image = UIImage(named: detail?.detailImage ?? "")
         aboutTxtView.text = detail?.desc
-        opHourLbl.text = detail?.open_hour
-        priceLbl.text = detail?.price
-        locLbl.text = detail?.location
+        opHourTxtView.text = detail?.open_hour
+        priceTxtView.text = detail?.price
+        locationTxtView.text = detail?.location
     }
     
     func customTabView(){
@@ -56,12 +58,7 @@ class DetailsInfoViewController: UIViewController {
     @IBAction func onClickTabBar(_ sender: UIButton) {
         let tag = sender.tag
                 
-        if tag == 1 {
-            guard let detailInfo = self.storyboard?.instantiateViewController(withIdentifier:
-                                "detailsInfoID") as? DetailsInfoViewController else {return}
-            contentView.addSubview(detailInfo.view)
-            detailInfo.didMove(toParent: self)
-        } else {
+        if tag == 2 {
             self.performSegue(withIdentifier: "detailPhotoID", sender: sender)
         }
     }
