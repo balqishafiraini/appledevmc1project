@@ -14,12 +14,6 @@
 		A030E1A4280599F50049985E /* DetailPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030E1A3280599F50049985E /* DetailPhotoCell.swift */; };
 		A030E1A628059A1A0049985E /* DetailsPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A030E1A528059A1A0049985E /* DetailsPhotoViewController.swift */; };
 		A0523AF72803E5C10003134D /* DetailsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0523AF42803E5C10003134D /* DetailsInfoViewController.swift */; };
-		A0523AFB2804436C0003134D /* DetailPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0523AFA2804436C0003134D /* DetailPhotoCell.swift */; };
-		A0862D74280446BA00C43297 /* DetailsPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0862D73280446BA00C43297 /* DetailsPhotoViewController.swift */; };
-		A0654FA8280528D1006CF197 /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0654FA7280528D1006CF197 /* TabBarVC.swift */; };
-		A0862D762804569B00C43297 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0862D752804569B00C43297 /* StackViewController.swift */; };
-		A0D029F628046D4C00532309 /* TabBarPhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D029F528046D4C00532309 /* TabBarPhotoController.swift */; };
-		A0D029F82804779F00532309 /* TabBarGalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D029F72804779F00532309 /* TabBarGalleryController.swift */; };
 		FA0FC31F2800835C00CA0D9F /* TourismCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC31D2800835C00CA0D9F /* TourismCell.swift */; };
 		FA0FC3202800835C00CA0D9F /* TourismCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA0FC31E2800835C00CA0D9F /* TourismCell.xib */; };
 		FA0FC3232800836A00CA0D9F /* AcommodationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0FC3212800836A00CA0D9F /* AcommodationCell.swift */; };
@@ -50,10 +44,6 @@
 		FAF16E1B27F53C6000D3842F /* mc1projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E1A27F53C6000D3842F /* mc1projectTests.swift */; };
 		FAF16E2527F53C6000D3842F /* mc1projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E2427F53C6000D3842F /* mc1projectUITests.swift */; };
 		FAF16E2727F53C6000D3842F /* mc1projectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF16E2627F53C6000D3842F /* mc1projectUITestsLaunchTests.swift */; };
-		FAF7CE7827FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7CE7727FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift */; };
-		FAF7CE7D27FC8081004920B1 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7CE7C27FC8081004920B1 /* ListCell.swift */; };
-		FAF7CE8127FC889D004920B1 /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAF7CE8027FC889D004920B1 /* CardViewController.xib */; };
-		FAF7CE8327FC8B56004920B1 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF7CE8227FC8B56004920B1 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,12 +71,6 @@
 		A030E1A3280599F50049985E /* DetailPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoCell.swift; sourceTree = "<group>"; };
 		A030E1A528059A1A0049985E /* DetailsPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPhotoViewController.swift; sourceTree = "<group>"; };
 		A0523AF42803E5C10003134D /* DetailsInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsInfoViewController.swift; sourceTree = "<group>"; };
-		A0523AFA2804436C0003134D /* DetailPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPhotoCell.swift; sourceTree = "<group>"; };
-		A0862D73280446BA00C43297 /* DetailsPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPhotoViewController.swift; sourceTree = "<group>"; };
-		A0654FA7280528D1006CF197 /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
-		A0862D752804569B00C43297 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
-		A0D029F528046D4C00532309 /* TabBarPhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPhotoController.swift; sourceTree = "<group>"; };
-		A0D029F72804779F00532309 /* TabBarGalleryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarGalleryController.swift; sourceTree = "<group>"; };
 		FA0FC31D2800835C00CA0D9F /* TourismCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourismCell.swift; sourceTree = "<group>"; };
 		FA0FC31E2800835C00CA0D9F /* TourismCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TourismCell.xib; sourceTree = "<group>"; };
 		FA0FC3212800836A00CA0D9F /* AcommodationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcommodationCell.swift; sourceTree = "<group>"; };
@@ -121,10 +105,6 @@
 		FAF16E2027F53C6000D3842F /* mc1projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mc1projectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF16E2427F53C6000D3842F /* mc1projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mc1projectUITests.swift; sourceTree = "<group>"; };
 		FAF16E2627F53C6000D3842F /* mc1projectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mc1projectUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FAF7CE7727FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsInfoSwipeViewController.swift; sourceTree = "<group>"; };
-		FAF7CE7C27FC8081004920B1 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
-		FAF7CE8027FC889D004920B1 /* CardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
-		FAF7CE8227FC8B56004920B1 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,9 +138,6 @@
 				A030E1A3280599F50049985E /* DetailPhotoCell.swift */,
 				A0523AF42803E5C10003134D /* DetailsInfoViewController.swift */,
 				A030E1A528059A1A0049985E /* DetailsPhotoViewController.swift */,
-				A0D029F528046D4C00532309 /* TabBarPhotoController.swift */,
-				A0D029F72804779F00532309 /* TabBarGalleryController.swift */,
-				A0654FA7280528D1006CF197 /* TabBarVC.swift */,
 			);
 			path = DetailsInfo;
 			sourceTree = "<group>";
@@ -269,9 +246,7 @@
 				FAF16E0227F53C5E00D3842F /* SceneDelegate.swift */,
 				A0523AF32803E5C10003134D /* DetailsInfo */,
 				FAF7CE7927FC7FDA004920B1 /* Homepage */,
-				FAF7CE7A27FC800A004920B1 /* DetailIsInfoSwipe */,
 				FAF16E0627F53C5E00D3842F /* Main.storyboard */,
-				A0862D752804569B00C43297 /* StackViewController.swift */,
 				FA311DC527FDE32E002CA5A7 /* CategorizeCity */,
 				FA311DC327FDE32A002CA5A7 /* CategorizeCityViewController.swift */,
 				FAF16E0E27F53C6000D3842F /* LaunchScreen.storyboard */,
@@ -306,17 +281,6 @@
 				FAB78C5C27FEA3BD009D3696 /* Cell */,
 			);
 			path = Homepage;
-			sourceTree = "<group>";
-		};
-		FAF7CE7A27FC800A004920B1 /* DetailIsInfoSwipe */ = {
-			isa = PBXGroup;
-			children = (
-				FAF7CE7C27FC8081004920B1 /* ListCell.swift */,
-				FAF7CE7727FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift */,
-				FAF7CE8027FC889D004920B1 /* CardViewController.xib */,
-				FAF7CE8227FC8B56004920B1 /* CardViewController.swift */,
-			);
-			path = DetailIsInfoSwipe;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,7 +390,6 @@
 				FAB78C6027FEA3DB009D3696 /* TripCell.xib in Resources */,
 				FA0FC3202800835C00CA0D9F /* TourismCell.xib in Resources */,
 				FA0FC3282800838400CA0D9F /* TourismItemCell.xib in Resources */,
-				FAF7CE8127FC889D004920B1 /* CardViewController.xib in Resources */,
 				FAF16E1027F53C6000D3842F /* LaunchScreen.storyboard in Resources */,
 				FAB78C6427FEA4B3009D3696 /* TripItemCell.xib in Resources */,
 				FA0FC32C2800839200CA0D9F /* AcommodationItemCell.xib in Resources */,
@@ -475,19 +438,12 @@
 				423C32B52801DF2D00264C86 /* FoodItemCell.swift in Sources */,
 				FAB78C6327FEA4B3009D3696 /* TripItemCell.swift in Sources */,
 				FAB78C5F27FEA3DB009D3696 /* TripCell.swift in Sources */,
-				A0862D762804569B00C43297 /* StackViewController.swift in Sources */,
 				FAF16E0B27F53C5E00D3842F /* mc1project.xcdatamodeld in Sources */,
-				FAF7CE7827FC7DB9004920B1 /* DetailsInfoSwipeViewController.swift in Sources */,
 				A030E1A4280599F50049985E /* DetailPhotoCell.swift in Sources */,
-				A0D029F82804779F00532309 /* TabBarGalleryController.swift in Sources */,
-				A0D029F628046D4C00532309 /* TabBarPhotoController.swift in Sources */,
-				FAF7CE8327FC8B56004920B1 /* CardViewController.swift in Sources */,
 				FA0FC3232800836A00CA0D9F /* AcommodationCell.swift in Sources */,
 				FA311DC427FDE32A002CA5A7 /* CategorizeCityViewController.swift in Sources */,
-				A0654FA8280528D1006CF197 /* TabBarVC.swift in Sources */,
 				FA0FC3272800838400CA0D9F /* TourismItemCell.swift in Sources */,
 				A0523AF72803E5C10003134D /* DetailsInfoViewController.swift in Sources */,
-				FAF7CE7D27FC8081004920B1 /* ListCell.swift in Sources */,
 				423C32AD2801DC1E00264C86 /* FoodCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

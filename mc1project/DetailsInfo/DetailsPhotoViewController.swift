@@ -9,8 +9,6 @@ import UIKit
 
 class DetailsPhotoViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    @IBOutlet weak var backBtn: UIButton!
-    
     @IBOutlet weak var detailPhotoCollection: UICollectionView!
     
     var detailPhotoArr: [String]?
@@ -25,7 +23,6 @@ class DetailsPhotoViewController: UIViewController, UICollectionViewDelegate, UI
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        print(detailPhotoArr)
         let cell = (collectionView.dequeueReusableCell(withReuseIdentifier: "detailPhotoID", for: indexPath) as? DetailPhotoCell)!
         cell.detailPhotoImg.image = UIImage(named: detailPhotoArr![indexPath.row])
         return cell
